@@ -18,5 +18,7 @@ jobs:
           git remote add upstream https://github.com/kubesphere/kubekey.git
           git fetch upstream
           git checkout main
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
           git merge upstream/main --no-ff
           git push origin main
